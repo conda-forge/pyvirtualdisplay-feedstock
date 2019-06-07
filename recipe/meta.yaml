@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "0.2.3" %}
 
 package:
   name: pyvirtualdisplay
@@ -7,11 +7,11 @@ package:
 source:
   fn: pyvirtualdisplay-{{ version }}.tar.gz
   url:  https://github.com/ponty/PyVirtualDisplay/archive/{{ version}}.tar.gz
-  sha256: 2c6bf006de7b1e950fae264d337c4344540e9f96d76e46f763fbb53e18798317
+  sha256: 34ed07c51af2f41a8110af4a463ffd4b0db61f5f19e96a1123b925bf13830013
 
 build:
   skip: true  # [win]
-  number: 1000
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
