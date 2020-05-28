@@ -1,4 +1,4 @@
-{% set version = "0.2.5" %}
+{% set version = "1.1" %}
 
 package:
   name: pyvirtualdisplay
@@ -6,13 +6,13 @@ package:
 
 source:
   fn: pyvirtualdisplay-{{ version }}.tar.gz
-  url:  https://github.com/ponty/PyVirtualDisplay/archive/{{ version}}.tar.gz
-  sha256: 30c13528871d032aec9c09b3a84452cb1d4f0dfc00a8f981df8bfa011b96e073
+  url: https://github.com/ponty/PyVirtualDisplay/archive/{{ version }}.tar.gz
+  sha256: b6260dc4ecddc806ec0398668013bf14143e19e86f92d233a0fe5da9c1f39b69
 
 build:
   skip: true  # [win]
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -30,7 +30,7 @@ about:
   home: https://github.com/ponty/pyvirtualdisplay
   license: BSD 2-clause
   license_file: LICENSE.txt
-  summary: 'python wrapper for Xvfb, Xephyr and Xvnc'
+  summary: python wrapper for Xvfb, Xephyr and Xvnc
 
 extra:
   recipe-maintainers:
