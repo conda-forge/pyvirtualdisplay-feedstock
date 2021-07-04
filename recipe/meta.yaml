@@ -1,7 +1,7 @@
 {% set version = "2.2" %}
 
 package:
-  name: PyVirtualDisplay
+  name: PyVirtualDisplay 
   version: {{ version }}
 
 source:
