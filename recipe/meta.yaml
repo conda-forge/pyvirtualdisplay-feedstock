@@ -1,5 +1,4 @@
 {% set version = "2.2" %}
-{% set pypiname = "PyVirtualDisplay" %}
 
 package:
   name: pyvirtualdisplay
@@ -7,7 +6,7 @@ package:
 
 source:
   fn: pyvirtualdisplay-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ pypiname[0] }}/{{ pypiname }}/{{ pypiname }}-{{ version }}.tar.gz 
+  url: https://pypi.io/packages/source/P/PyVirtualDisplay/PyVirtualDisplay-{{ version }}.tar.gz
   sha256: 3ecda6b183b03ba65dcfdf0019809722480d7b7e10eea6e3a40bf1ba3146bab7
 
 build:
