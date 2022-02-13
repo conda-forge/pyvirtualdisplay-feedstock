@@ -1,5 +1,5 @@
 {% set name = "pyvirtualdisplay" %}
-{% set version = "2.2" %}
+{% set version = "3.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyVirtualDisplay-{{ version }}.tar.gz
-  sha256: 3ecda6b183b03ba65dcfdf0019809722480d7b7e10eea6e3a40bf1ba3146bab7
+  sha256: 09755bc3ceb6eb725fb07eca5425f43f2358d3bf08e00d2a9b792a1aedd16159
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
