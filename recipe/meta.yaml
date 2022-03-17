@@ -17,10 +17,9 @@ build:
 
 requirements:
   host:
-    - pip
+    - pi
     - python >=3.6
   run:
-    - easyprocess
     - python >=3.6
     - pillow
 
