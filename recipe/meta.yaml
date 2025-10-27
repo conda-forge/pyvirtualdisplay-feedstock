@@ -11,17 +11,20 @@ source:
 
 build:
   number: 4
+  noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - pillow
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pyvirtualdisplay
 
